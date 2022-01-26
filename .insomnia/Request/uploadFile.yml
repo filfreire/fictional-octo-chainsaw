@@ -1,7 +1,7 @@
 _id: uploadFile
 type: Request
 parentId: fld_wrk_494a2821e0dc4872a853614a9788ffb61b034c38
-modified: 1643216032327
+modified: 1643216970952
 created: 1643214726594
 url: "{{ base_url }}/pet/{{ petId }}/uploadImage"
 name: uploads an image
@@ -13,14 +13,17 @@ body:
     - name: additionalMetadata
       disabled: true
       value: string
+      id: pair_c8975099f6c1441e9ebc5c4e5274a5ad
     - name: file
       disabled: true
       type: file
+      id: pair_d8c3d17393914f789ced6ff732c300bd
 parameters: []
 headers:
   - name: Content-Type
     disabled: false
     value: multipart/form-data
+    id: pair_cb126e9e99d04db58e43d2fa7bc2c7a6
 authentication:
   type: oauth2
   grantType: authorization_code
